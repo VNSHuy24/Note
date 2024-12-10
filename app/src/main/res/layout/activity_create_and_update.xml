@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".CreateAndUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBackToMain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/delete" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/btnUndo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/undo" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/btnDone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/tick" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/edtTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tiêu đề"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time now" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/edtBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bắt đầu soạn"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
